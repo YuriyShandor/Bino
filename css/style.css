@@ -1,0 +1,257 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/open_sans/OpenSans-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/open_sans/OpenSans-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/open_sans/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/open_sans/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/open_sans/OpenSans-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: SourceSans;
+  src: url(../fonts/source_sans/SourceSansPro-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: SourceSans;
+  src: url(../fonts/source_sans/SourceSansPro-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: SourceSans;
+  src: url(../fonts/source_sans/SourceSansPro-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SourceSans;
+  src: url(../fonts/source_sans/SourceSansPro-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SourceSans;
+  src: url(../fonts/source_sans/SourceSansPro-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: SourceSans;
+  src: url(../fonts/source_sans/SourceSansPro-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: OpenSans, Arial sans-serif;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.bino-btn {
+  display: inline-block;
+  text-align: center;
+  border: none;
+  background: #e74c3c;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+.bino-btn:hover {
+  background: #d62c1a;
+}
+
+.divider {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.divider__line {
+  width: 80px;
+  height: 1px;
+  background: #999;
+}
+
+.divider__circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+  background: #e74c3c;
+  margin: 0 14px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+header .header-slider {
+  width: inherit;
+}
+
+header .header-slider__slide {
+  width: inherit;
+  position: relative;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+header .header-slider__slide::before {
+  background: rgba(0, 0, 0, 0.85);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+header .header-slider__slide * {
+  z-index: 1;
+}
+
+header .header-slider__slide h2 {
+  margin: 0;
+  margin-top: 325px;
+  margin-bottom: 50px;
+  font-family: SourceSans;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+header .header-slider__slide h1 {
+  margin: 0;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header .header-slider__slide .divider {
+  margin: 45px 0;
+}
+
+header .header-slider__slide .divider__line {
+  background: #f1ebe7;
+}
+
+header .header-slider__slide p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cbc6c0;
+  width: 35vw;
+}
+
+header .header-slider__slide .header-btn {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 260px;
+}
+
+header .header-slider__slide .header-btn .bino-btn {
+  width: 225px;
+}
+
+header .header-slider__slide .header-btn .header-btn_learn {
+  margin-left: 30px;
+  background: transparent;
+  border: 2px solid #fff;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+header .header-slider__slide .header-btn .header-btn_learn:hover {
+  border: 2px solid #d62c1a;
+  background: #d62c1a;
+}
+
+header .header-slider__slide_01 {
+  background: url(../img/header__bg_01.jpg) no-repeat center/cover;
+}
+
+header .header-slider__slide_02 {
+  background: url(../img/header__bg_01.jpg) no-repeat center/cover;
+}
+
+header .header-slider__slide_03 {
+  background: url(../img/header__bg_01.jpg) no-repeat center/cover;
+}
+
+header .header-triangle {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 123px solid #fff;
+}
+
+header .header-triangle__left {
+  left: 0;
+  border-left: 0px solid transparent;
+  border-right: 50vw solid transparent;
+}
+
+header .header-triangle__right {
+  right: 0;
+  border-left: 50vw solid transparent;
+  border-right: 0px solid transparent;
+}
