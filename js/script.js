@@ -7,4 +7,8 @@ $(document).ready(function() {
    autoplay: true,
    autoplaySpeed: 5000,
   });
+
+  $('.toggler-icon').on('click', function() {
+    $('.nav-bar').slideToggle('0.5s');
+  });
 });
