@@ -1,0 +1,58 @@
+.header-nav {
+  .toggler-icon {
+    display: none;
+  }
+
+  .nav-bar {
+    margin: 0;
+    padding: 0;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    .nav-item {
+      position: relative;
+      list-style: none;
+      margin-left: 60px;
+      padding-top: 18px;
+      //margin-bottom: 40px;
+
+      &::after {
+        margin: 0 auto;
+        margin-top: 18px;
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: $red;
+        -webkit-transition: width .3s;
+        transition: width .3s;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      .nav-link {
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+        -webkit-transition: all, 0.3s;
+        transition: all, 0.3s;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}

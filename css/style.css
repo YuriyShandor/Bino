@@ -64,6 +64,60 @@
   font-weight: 200;
 }
 
+.header-nav .toggler-icon {
+  display: none;
+}
+
+.header-nav .nav-bar {
+  margin: 0;
+  padding: 0;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav .nav-bar .nav-item {
+  position: relative;
+  list-style: none;
+  margin-left: 60px;
+  padding-top: 18px;
+}
+
+.header-nav .nav-bar .nav-item::after {
+  margin: 0 auto;
+  margin-top: 18px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #e74c3c;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.header-nav .nav-bar .nav-item:first-child {
+  margin-left: 0;
+}
+
+.header-nav .nav-bar .nav-item:hover::after {
+  width: 100%;
+}
+
+.header-nav .nav-bar .nav-item .nav-link {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+.header-nav .nav-bar .nav-item .nav-link:hover {
+  color: #e74c3c;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -129,12 +183,17 @@ body {
 header {
   position: relative;
   width: 100%;
+  margin-bottom: 200px;
 }
 
 header .top-header {
   position: absolute;
   top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 100;
+  padding: 40px 0;
 }
 
 header .header-slider {
@@ -234,11 +293,11 @@ header .header-slider__slide_01 {
 }
 
 header .header-slider__slide_02 {
-  background: url(../img/header__bg_01.jpg) no-repeat center/cover;
+  background: url(../img/header__bg_02.jpg) no-repeat center/cover;
 }
 
 header .header-slider__slide_03 {
-  background: url(../img/header__bg_01.jpg) no-repeat center/cover;
+  background: url(../img/header__bg_03.jpg) no-repeat center/cover;
 }
 
 header .header-triangle {
@@ -296,7 +355,11 @@ header .header-slider__nav:hover {
 }
 
 header .header-slider__nav_next {
-  right: 0;
+  right: 2.5%;
+}
+
+header .header-slider__nav_prev {
+  left: 2.5%;
 }
 
 header .header-down__icon {
@@ -326,8 +389,10 @@ header .header-down__icon {
 }
 
 header .header-down__icon img {
-  -webkit-transition: all, .7s;
-  transition: all, .7s;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
 }
 
 header .header-down__icon:hover {
