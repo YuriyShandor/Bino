@@ -563,7 +563,7 @@ header {
 #about-us {
   width: 100%;
   padding: 140px 0;
-  border: 1px solid #e6e7eb;
+  border-top: 1px solid #e6e7eb;
 
   .about-us__image {
     img {
@@ -636,10 +636,46 @@ header {
   }
 }
 
-@media only screen and (max-width : 575px) {
+.our-services {
+  width: 100%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 
+  &__info {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 55%;
+    padding: 140px 0;
+    background: #202020;
+
+    .our-services__heading {
+      font-family: SourceSans;
+      font-size: 36px;
+      font-weight: 700;
+      color: #f4f5f9;
+      text-align: right;
+      text-transform: uppercase;
+      padding-right: 30px;
+      border-right: 6px solid $red;
+      margin-right: 80px;
+      margin-bottom: 70px;
+    }
+
+    .our-services__slider {
+      
+    }
+  }
+
+  &__image {
+    width: 45%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    background: url(../img/our-services__image.jpg) no-repeat center / cover;
+  }
 }
-
 
 @media only screen and (max-width : 1199px) {
 

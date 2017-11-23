@@ -11,4 +11,15 @@ $(document).ready(function() {
   $('.toggler-icon').on('click', function() {
     $('.nav-bar').slideToggle('0.5s');
   });
+
+  $('.our-services__slider').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   vertical: true,
+   verticalSwiping: true,
+   dots: true,
+   // autoplay: true,
+   // autoplaySpeed: 5000,
+  });
 });
