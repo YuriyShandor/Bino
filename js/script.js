@@ -19,7 +19,8 @@ $(document).ready(function() {
    vertical: true,
    verticalSwiping: true,
    dots: true,
-   // autoplay: true,
-   // autoplaySpeed: 5000,
+   dotsClass: 'slick-dots__our-services',
+   autoplay: true,
+   autoplaySpeed: 5000,
   });
 });
