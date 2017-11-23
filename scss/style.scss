@@ -42,7 +42,7 @@ body {
   transition: all, .5s;
 
   &:hover {
-    background: darken($red, 10%);
+    background: darken($red, 15%);
   }
 }
 
@@ -73,7 +73,6 @@ body {
 header {
   position: relative;
   width: 100%;
-  margin-bottom: 200px;
 
   .top-header {
     position: absolute;
@@ -175,7 +174,7 @@ header {
 
           &:hover {
             border: 2px solid #d62c1a;
-            background: #d62c1a;
+            background: darken($red, 15%);
           }
         }
       }
@@ -196,7 +195,7 @@ header {
 
   .header-triangle {
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     width: 0;
     height: 0;
     border-bottom: 123px solid #fff;
@@ -382,7 +381,7 @@ header {
   }
 }
 
-@media only screen and (max-width : 567px) {
+@media only screen and (max-width : 575px) {
   header {
     .header-slider {
       &__slide {
@@ -441,6 +440,126 @@ header {
   }
 }
 
+.who-we {
+  margin-top: 125px;
+  margin-bottom: 80px;
+
+  &-block {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+
+    &__square {
+      width: 71px;
+      height: 71px;
+      border: 1px solid #e5e5e5;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-transition: all, .5s;
+      transition: all, .5s;
+      margin-bottom: 30px;
+
+      img {
+        -webkit-transition: all, .5s;
+        transition: all, .5s;
+      }
+    }
+
+    &__title {
+      margin: 0;
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #6a6a6a;
+      -webkit-transition: all, .5s;
+      transition: all, .5s;
+    }
+
+    &__line {
+      width: 40px;
+      height: 1px;
+      background: #888;
+      margin: 20px 0;
+    }
+
+    &__discr {
+      font-family: SourceSans;
+      font-weight: 400;
+      font-size: 14px;
+      color: #999;
+    }
+
+    &:hover {
+      .who-we-block__square {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        border: 1px solid $red;
+
+        img {
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+        }
+      }
+
+      .who-we-block__title {
+        color: $red;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+  .who-we {
+    margin-top: 110px;
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  .who-we {
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    &-block {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .who-we {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width : 575px) {
+  .who-we {
+    &-block {
+      &__discr {
+        width: 80%;
+      }
+    }
+  }
+}
+
 
 @media only screen and (max-width : 1199px) {
 
@@ -454,7 +573,7 @@ header {
 
 }
 
-@media only screen and (max-width : 567px) {
+@media only screen and (max-width : 575px) {
 
 }
 
@@ -471,7 +590,7 @@ header {
 
 }
 
-@media only screen and (max-width : 567px) {
+@media only screen and (max-width : 575px) {
 
 }
 
@@ -488,7 +607,7 @@ header {
 
 }
 
-@media only screen and (max-width : 567px) {
+@media only screen and (max-width : 575px) {
 
 }
 
@@ -505,23 +624,6 @@ header {
 
 }
 
-@media only screen and (max-width : 567px) {
-
-}
-
-
-@media only screen and (max-width : 1199px) {
-
-}
-
-@media only screen and (max-width : 991px) {
-
-}
-
-@media only screen and (max-width : 767px) {
-
-}
-
-@media only screen and (max-width : 567px) {
+@media only screen and (max-width : 575px) {
 
 }
