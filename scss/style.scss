@@ -560,17 +560,80 @@ header {
   }
 }
 
+#about-us {
+  width: 100%;
+  padding: 140px 0;
+  border: 1px solid #e6e7eb;
+
+  .about-us__image {
+    img {
+      width: 95%;
+    }
+  }
+
+  .about-us__info {
+    h1 {
+      font-family: SourceSans;
+      font-size: 36px;
+      font-weight: 700;
+      color: #6a6a6a;
+      text-transform: uppercase;
+      border-left: 6px solid $red;
+      padding-left: 30px;
+    }
+
+    p {
+      margin: 0 auto;
+      font-family: SourceSans;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      margin-top: 15px;
+    }
+
+    .bino-btn {
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
-
+  #about-us {
+    padding: 110px 0;
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  #about-us {
+    padding: 70px 0;
 
+    .about-us__image {
+      display: none;
+    }
+
+    .about-us__info {
+      text-align: center;
+
+      h1 {
+        display: inline-block;
+      }
+
+      p {
+        width: 90%;
+      }
+
+      .bino-btn {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
-
+  #about-us {
+    padding: 50px 0;
+  }
 }
 
 @media only screen and (max-width : 575px) {
