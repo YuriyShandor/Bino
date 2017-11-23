@@ -23,4 +23,17 @@ $(document).ready(function() {
    autoplay: true,
    autoplaySpeed: 5000,
   });
+
+  var products = ['all', 'print-design', 'animation', 'art', 'web-design', 'photography', 'video'];
+
+  $('.works-categories__category_all').addClass('works-categories__category_active');
+
+  products.forEach(function(item) {
+    $(`.works-categories__category_${item}`).click(function(){
+      $('.works-categories__category').removeClass('works-categories__category_active');
+      $(this).addClass('works-categories__category_active');
+      $('.work__all').addClass('work-hidden');
+      $(`.work__${item}`).removeClass('work-hidden');
+    });
+  });
 });
