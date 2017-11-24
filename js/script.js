@@ -36,4 +36,14 @@ $(document).ready(function() {
       $(`.work__${item}`).removeClass('work-hidden');
     });
   });
+
+  $('.study-slider').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   dots: true,
+   dotsClass: 'slick-dots__study-slider',
+   // autoplay: true,
+   // autoplaySpeed: 5000,
+  });
 });

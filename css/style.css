@@ -609,6 +609,7 @@ header .header-down__icon:hover img {
   width: 71px;
   height: 71px;
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
   display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -893,6 +894,8 @@ header .header-down__icon:hover img {
   margin-right: 10px;
   outline: none;
   padding: 0;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
 }
 
 .slick-dots__our-services li button:hover {
@@ -1217,4 +1220,147 @@ header .header-down__icon:hover img {
   #works .our-works .work__all {
     width: 100%;
   }
+}
+
+.section-study {
+  width: 100%;
+  padding: 150px 0;
+  background: #f4f5f9;
+}
+
+.section-study__block {
+  position: relative;
+}
+
+.section-study__block-info {
+  z-index: 10;
+  background: #fff;
+}
+
+.section-study__block-info .study-slider {
+  outline: none;
+}
+
+.section-study__block-info .study-slider__slide {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-study__block-info .study-slider__slide-square {
+  margin-top: 70px;
+  margin-bottom: 55px;
+  width: 75px;
+  height: 75px;
+  border-radius: 3px;
+  background: #e74c3c;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.section-study__block-info .study-slider__slide-square img {
+  -webkit-filter: brightness(500%);
+  filter: brightness(500%);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.section-study__block-info .study-slider__slide-title {
+  margin: 0;
+  font-family: SourceSans;
+  font-size: 28px;
+  font-weight: 600;
+  color: #6a6a6a;
+  text-transform: uppercase;
+}
+
+.section-study__block-info .study-slider__slide-divider {
+  width: 42px;
+  height: 2px;
+  background: #888;
+  margin: 30px 0;
+}
+
+.section-study__block-info .study-slider__slide-discr {
+  font-family: SourceSans;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  width: 75%;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.section-study__block-info .study-slider__slide .bino-btn {
+  padding: 20px 40px;
+  margin-bottom: 115px;
+}
+
+.section-study__block-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.slick-dots__study-slider {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+
+.slick-dots__study-slider li {
+  list-style: none;
+}
+
+.slick-dots__study-slider li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: #e4e6f0;
+  border-radius: 7px;
+  margin-right: 10px;
+  outline: none;
+  padding: 0;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+.slick-dots__study-slider li button:hover {
+  background: #bf2718;
+}
+
+.slick-dots__study-slider li:last-child button {
+  margin-right: 0;
+}
+
+.slick-dots__study-slider li.slick-active button {
+  background: #e74c3c;
 }
