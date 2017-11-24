@@ -922,7 +922,7 @@ header {
 }
 
 #works {
-  padding: 100px 0;
+  padding-top: 100px;
 
   .works-categories {
     padding: 0;
@@ -957,10 +957,108 @@ header {
       }
     }
   }
+
+  .our-works {
+    margin-top: 50px;
+    width: 100%;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    .work__all {
+      width: 25%;
+      margin: 0 auto;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        .work__hover {
+          display: -ms-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+        }
+      }
+
+      .work__hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(231, 76, 60, 0.8);
+        padding-left: 10%;
+        padding-bottom: 10%;
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+
+        div {
+          width: 45px;
+          height: 4px;
+          background: #fff;
+        }
+
+        a {
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          text-decoration: none;
+          margin-top: 30px;
+          margin-bottom: 10px;
+          font-family: SourceSans;
+          font-size: 24px;
+          font-weight: 600;
+          color: #fff;
+          text-transform: uppercase;
+          -webkit-transition: all, 0.5s;
+          transition: all, 0.5s;
+
+          &::after {
+            content: '';
+            display: block;
+            width: 0;
+            margin: 0 auto;
+            height: 3px;
+            background: #fff;
+            -webkit-transition: width .5s;
+            transition: width .5s;
+          }
+
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 
 .works-categories__category_active {
   color: $red !important;
+}
+
+.work-hidden {
+  display: none;
 }
 
 @media only screen and (max-width : 1199px) {
@@ -968,7 +1066,15 @@ header {
 }
 
 @media only screen and (max-width : 991px) {
+  #works {
+    padding-top: 70px;
 
+    .our-works {
+      .work__all {
+        width: 50%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
@@ -978,10 +1084,85 @@ header {
       width: 90%;
     }
   }
+
+  #works {
+    padding-top: 50px;
+
+    .works-categories {
+      margin-top: 20px;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+
+      li {
+        margin-top: 10px;
+      }
+
+      &__divider {
+        margin: 0 10px;
+      }
+    }
+
+    .our-works {
+      margin-top: 30px;
+
+      .work__all {
+        width: 50%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 575px) {
+  #works {
+    padding-top: 50px;
 
+    .works-categories {
+      padding: 0 15px;
+      margin-top: 20px;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+
+      li {
+        margin-top: 10px;
+      }
+
+      &__divider {
+        margin: 0 10px;
+      }
+    }
+
+    .our-works {
+      margin-top: 30px;
+
+      .work__all {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 450px) {
+  #works {
+    .our-works {
+      .work__all {
+        width: 100%;
+      }
+    }
+  }
 }
 
 
