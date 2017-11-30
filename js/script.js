@@ -43,7 +43,27 @@ $(document).ready(function() {
    arrows: false,
    dots: true,
    dotsClass: 'slick-dots__study-slider',
-   // autoplay: true,
-   // autoplaySpeed: 5000,
+   autoplay: true,
+   autoplaySpeed: 5000,
+  });
+
+  var a = 0;
+  $(window).scroll(function() {
+    var oTop = $('#section-statistic').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $('.statisctic-info__amount').each(function () {
+        $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+        },
+        {
+          duration: 3000,
+          easing: 'swing',
+          step: function (now) {
+          $(this).text(Math.ceil(now));
+        }
+        });
+      });
+      a = 1;
+    }
   });
 });
