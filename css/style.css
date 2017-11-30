@@ -1224,21 +1224,31 @@ header .header-down__icon:hover img {
 
 .section-study {
   width: 100%;
-  padding: 150px 0;
+  padding: 120px 0;
   background: #f4f5f9;
 }
 
 .section-study__block {
-  position: relative;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 65px;
 }
 
 .section-study__block-info {
   z-index: 10;
   background: #fff;
+  -webkit-transform: translateX(15px);
+  transform: translateX(15px);
 }
 
 .section-study__block-info .study-slider {
   outline: none;
+  padding: 0;
 }
 
 .section-study__block-info .study-slider__slide {
@@ -1257,8 +1267,8 @@ header .header-down__icon:hover img {
 }
 
 .section-study__block-info .study-slider__slide-square {
-  margin-top: 70px;
-  margin-bottom: 55px;
+  margin-top: 50px;
+  margin-bottom: 45px;
   width: 75px;
   height: 75px;
   border-radius: 3px;
@@ -1316,9 +1326,15 @@ header .header-down__icon:hover img {
 }
 
 .section-study__block-image {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  margin-left: -95px;
+}
+
+.section-study__block-image img {
+  width: inherit;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
 }
 
 .slick-dots__study-slider {
@@ -1363,4 +1379,51 @@ header .header-down__icon:hover img {
 
 .slick-dots__study-slider li.slick-active button {
   background: #e74c3c;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-study {
+    padding: 100px 0;
+  }
+  .section-study__block-image {
+    margin-left: -90px;
+  }
+  .section-study__block-image img {
+    width: 120%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section-study {
+    padding: 75px 0;
+  }
+  .section-study__block {
+    margin-top: 50px;
+  }
+  .section-study__block-info {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  .section-study__block-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-study {
+    padding: 50px 0;
+  }
+  .section-study__block {
+    margin-top: 40px;
+  }
+  .section-study__block-info {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  .section-study__block-info .study-slider__slide-discr {
+    width: 80%;
+  }
+  .section-study__block-image {
+    display: none;
+  }
 }

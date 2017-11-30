@@ -1170,17 +1170,27 @@ header {
 
 .section-study {
   width: 100%;
-  padding: 150px 0;
+  padding: 120px 0;
   background: #f4f5f9;
 
   &__block {
-    position: relative;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 65px;
 
     &-info {
       z-index: 10;
       background: #fff;
+      -webkit-transform: translateX(15px);
+              transform: translateX(15px);
       .study-slider {
         outline: none;
+        padding: 0;
 
         &__slide {
           display: -ms-flex;
@@ -1197,8 +1207,8 @@ header {
           text-align: center;
 
           &-square {
-            margin-top: 70px;
-            margin-bottom: 55px;
+            margin-top: 50px;
+            margin-bottom: 45px;
             width: 75px;
             height: 75px;
             border-radius: 3px;
@@ -1259,11 +1269,17 @@ header {
     }
 
     &-image {
-      position: absolute;
-      right: 0;
-      bottom: 0;
+    margin-left: -95px;
+
+      img {
+        width: inherit;
+      }
     }
   }
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
 }
 
 .slick-dots__study-slider {
@@ -1314,16 +1330,69 @@ header {
   }
 }
 
-@media only screen and (max-width : 1199px) {
+@media only screen and (max-width : 1200px) {
+  .section-study {
+    padding: 100px 0;
 
+    &__block {
+      &-info {
+      }
+
+      &-image {
+      margin-left: -90px;
+
+        img {
+          width: 120%;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .section-study {
+    padding: 75px 0;
 
+    &__block {
+      margin-top: 50px;
+
+      &-info {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+      }
+
+      &-image {
+        display: none;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .section-study {
+    padding: 50px 0;
 
+    &__block {
+      margin-top: 40px;
+
+      &-info {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+
+        .study-slider {
+          &__slide {
+            &-discr {
+              width: 80%;
+            }
+          }
+        }
+      }
+
+      &-image {
+        display: none;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 575px) {
