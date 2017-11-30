@@ -66,4 +66,10 @@ $(document).ready(function() {
       a = 1;
     }
   });
+  
+  $('.pricing:nth-child(2)').addClass('pricing-hover');
+  $('.pricing').on('mousemove', function() {
+    $('.pricing').removeClass('pricing-hover');
+    $(this).addClass('pricing-hover');
+  });
 });

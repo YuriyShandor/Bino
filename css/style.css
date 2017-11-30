@@ -1575,3 +1575,156 @@ header .header-down__icon:hover img {
     margin-top: 0px;
   }
 }
+
+#our-pricing {
+  padding: 140px 0;
+}
+
+#our-pricing .pricing-block {
+  margin-top: 70px;
+}
+
+#our-pricing .pricing-block .pricing {
+  -webkit-transition: all, .3s;
+  transition: all, .3s;
+}
+
+#our-pricing .pricing-block .pricing * {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+}
+
+#our-pricing .pricing-block .pricing__top {
+  height: 205px;
+  background: #999;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+#our-pricing .pricing-block .pricing__top h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 50px;
+}
+
+#our-pricing .pricing-block .pricing__bottom {
+  height: 405px;
+  background: #f4f5f9;
+  color: #999;
+}
+
+#our-pricing .pricing-block .pricing__bottom .price-sircle {
+  width: 170px;
+  height: 170px;
+  border-radius: 170px;
+  border: 10px solid #f4f5f9;
+  background: #fff;
+  margin-top: -85px;
+  margin-bottom: 10px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: SourceSans;
+}
+
+#our-pricing .pricing-block .pricing__bottom .price-sircle__price {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: -10px;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+#our-pricing .pricing-block .pricing__bottom span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+#our-pricing .pricing-block .pricing__bottom .bino-btn {
+  width: 175px;
+  margin-top: 50px;
+  background: #999;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+.pricing-hover {
+  padding: 0;
+}
+
+.pricing-hover .pricing__top {
+  background: #e74c3c !important;
+}
+
+.pricing-hover .pricing__bottom .price-sircle__price {
+  color: #e74c3c !important;
+}
+
+.pricing-hover .pricing__bottom .bino-btn {
+  background: #e74c3c !important;
+}
+
+.pricing-hover .pricing__bottom .bino-btn:hover {
+  background: #bf2718 !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  #our-pricing {
+    padding: 100px 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #our-pricing {
+    padding: 75px 0;
+  }
+  #our-pricing .pricing-block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #our-pricing .pricing-block .pricing {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #our-pricing {
+    padding: 50px 0;
+  }
+  #our-pricing .pricing-block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #our-pricing .pricing-block .pricing {
+    margin-top: 20px;
+  }
+}
