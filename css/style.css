@@ -1885,3 +1885,94 @@ header .header-down__icon:hover img {
     width: 175px;
   }
 }
+
+#our-clients {
+  width: 100%;
+  padding: 140px 0;
+  background: #f4f5f9;
+}
+
+#our-clients .clients {
+  margin-top: 40px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#our-clients .clients div {
+  margin-top: 25px;
+  width: 210px;
+  height: 100px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+#our-clients .clients div a {
+  max-width: 80%;
+}
+
+#our-clients .clients div a img {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+#our-clients .clients div:hover {
+  background: #e74c3c;
+}
+
+#our-clients .clients div:hover a img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 1199px) {
+  #our-clients {
+    padding: 100px 0;
+  }
+  #our-clients .clients div {
+    width: 175px;
+    height: 90px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #our-clients {
+    padding: 75px 0;
+  }
+  #our-clients .clients {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #our-clients .clients div {
+    width: 210px;
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #our-clients {
+    padding: 50px 0;
+  }
+  #our-clients .clients div {
+    margin: 10px;
+  }
+}
