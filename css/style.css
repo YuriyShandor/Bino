@@ -1976,3 +1976,123 @@ header .header-down__icon:hover img {
     margin: 10px;
   }
 }
+
+.blog__trialgle {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-right: 30px solid #e74c3c;
+  border-bottom: 30px solid transparent;
+}
+
+#our-blog {
+  width: 100%;
+  padding-top: 140px;
+  background: #f4f5f9;
+}
+
+#our-blog .blog-container {
+  margin-top: 70px;
+  width: 100%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#our-blog .blog-container__block {
+  width: 50%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#our-blog .blog-container__block_img {
+  width: 50%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+#our-blog .blog-container__block_img img {
+  width: 100%;
+}
+
+#our-blog .blog-container__block_info {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background: #e74c3c;
+  color: #fff;
+  padding-left: 7%;
+  padding-top: 3%;
+  padding-right: 1%;
+  position: relative;
+}
+
+#our-blog .blog-container__block_info span {
+  margin-top: 50px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#our-blog .blog-container__block_info h3 {
+  margin: 0;
+  margin-top: 20px;
+  font-family: SourceSans;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#our-blog .blog-container__block_info .blog-info__divider {
+  width: 50px;
+  height: 4px;
+  background: #fff;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+#our-blog .blog-container__block_info p {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#our-blog .blog-container__block_info a {
+  position: relative;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+#our-blog .blog-container__block_info a:hover {
+  text-decoration: underline;
+}
+
+#our-blog .blog-container__block_info .blog__trialgle {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -30px;
+}
+
+#our-blog .blog-container__block_revers {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+#our-blog .blog-container__block_revers .blog-container__block_info .blog__trialgle {
+  right: -30px !important;
+}

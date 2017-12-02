@@ -1998,10 +1998,127 @@ header {
   }
 }
 
-@media only screen and (max-width : 575px) {
-
+.blog__trialgle {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-right: 30px solid $red;
+  border-bottom: 30px solid transparent;
 }
 
+#our-blog {
+  width: 100%;
+  padding-top: 140px;
+  background: #f4f5f9;
+
+  .blog-container {
+    margin-top: 70px;
+    width: 100%;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    &__block {
+      width: 50%;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      &_img {
+        width: 50%;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &_info {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        background: $red;
+        color: #fff;
+        padding-left: 7%;
+        padding-top: 3%;
+        padding-right: 1%;
+        position: relative;
+
+        span {
+          margin-top: 50px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        h3 {
+          margin: 0;
+          margin-top: 20px;
+          font-family: SourceSans;
+          font-size: 24px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        .blog-info__divider {
+          width: 50px;
+          height: 4px;
+          background: #fff;
+          margin-top: 5px;
+          margin-bottom: 25px;
+        }
+
+        p {
+          margin: 0;
+          margin-bottom: 15px;
+          font-size: 12px;
+          font-weight: 300;
+        }
+
+        a {
+          position: relative;
+          margin-top: 15px;
+          font-size: 16px;
+          font-weight: 400;
+          font-style: italic;
+          color: #fff;
+          text-decoration: none;
+          -webkit-transition: all, .5s;
+          transition: all, .5s;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .blog__trialgle {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          left: -30px;
+        }
+      }
+    }
+
+    &__block_revers {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+
+      .blog-container__block_info {
+        .blog__trialgle {
+          right: -30px !important;
+        }
+      }
+    }
+  }
 
 @media only screen and (max-width : 1199px) {
 
@@ -2034,4 +2151,5 @@ header {
 
 @media only screen and (max-width : 575px) {
 
+}
 }
