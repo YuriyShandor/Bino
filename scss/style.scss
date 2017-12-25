@@ -38,6 +38,8 @@ body {
   font-weight: 700;
   color: #fff;
   cursor: pointer;
+  -webkit-box-shadow: 7px 7px 22px -7px rgba(0,0,0,0.68);
+          box-shadow: 7px 7px 22px -7px rgba(0,0,0,0.68);
   -webkit-transition: all, .5s;
   transition: all, .5s;
 
@@ -1188,6 +1190,8 @@ header {
       background: #fff;
       -webkit-transform: translateX(15px);
               transform: translateX(15px);
+      -webkit-box-shadow: 7px 7px 22px -7px rgba(0,0,0,0.68);
+              box-shadow: 7px 7px 22px -7px rgba(0,0,0,0.68);
       .study-slider {
         outline: none;
         padding: 0;
@@ -1929,6 +1933,8 @@ header {
               align-items: center;
       background: #fff;
       border-radius: 5px;
+      -webkit-box-shadow: 7px 7px 22px -7px rgba(0,0,0,0.68);
+              box-shadow: 7px 7px 22px -7px rgba(0,0,0,0.68);
       -webkit-transition: all, .5s;
       transition: all, .5s;
 
@@ -2351,6 +2357,9 @@ header {
           -ms-flex-pack: center;
               justify-content: center;
       padding-left: 75px;
+      border-radius: 3px;
+      -webkit-box-shadow: 7px 7px 22px -7px rgba(0,0,0,0.68);
+              box-shadow: 7px 7px 22px -7px rgba(0,0,0,0.68);
     }
 
     &__info {
@@ -2489,6 +2498,10 @@ header {
       &__info, &__form {
         height: 375px;
         padding-left: 50px;
+      }
+
+      &__form {
+        margin-top: 10px;
       }
     }
   }
