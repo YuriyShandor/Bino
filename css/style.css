@@ -2410,8 +2410,12 @@ header .header-down__icon:hover img {
 
 .trial {
   width: 100%;
-  padding: 150px 30px;
+  padding: 150px 0;
   background: url(../img/trial__bg.jpg) no-repeat center/cover;
+  text-align: center;
+}
+
+.trial .row {
   display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2423,7 +2427,6 @@ header .header-down__icon:hover img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: center;
 }
 
 .trial__title {
@@ -2445,7 +2448,7 @@ header .header-down__icon:hover img {
 
 @media only screen and (max-width: 1199px) {
   .trial {
-    padding: 100px 30px;
+    padding: 100px 0;
   }
   .trial__discr {
     margin-bottom: 50px;
@@ -2454,7 +2457,10 @@ header .header-down__icon:hover img {
 
 @media only screen and (max-width: 991px) {
   .trial {
-    padding: 75px 35px;
+    padding: 75px 0;
+  }
+  .trial .row {
+    padding: 0 30px;
   }
   .trial__title {
     font-size: 32px;
@@ -2466,7 +2472,7 @@ header .header-down__icon:hover img {
 
 @media only screen and (max-width: 767px) {
   .trial {
-    padding: 50px 35px;
+    padding: 50px 0;
   }
   .trial__title {
     font-size: 30px;
@@ -2478,10 +2484,70 @@ header .header-down__icon:hover img {
 }
 
 @media only screen and (max-width: 567px) {
-  .trial {
-    padding: 50px 45px;
+  .trial .row {
+    padding: 0 45px;
   }
-  .trial__discr {
-    margin-bottom: 50px;
+}
+
+.main-footer {
+  width: 100%;
+  background: #202020;
+  padding: 35px 0;
+}
+
+.main-footer .row {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-footer__socials {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-footer__socials a {
+  margin-left: 20px;
+  color: #999;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+.main-footer__socials a i {
+  font-size: 20px;
+}
+
+.main-footer__socials a:first-child {
+  margin-left: 0;
+}
+
+.main-footer__socials a:hover {
+  color: #e74c3c;
+}
+
+.main-footer__copyright {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+}
+
+@media only screen and (max-width: 567px) {
+  .main-footer .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .main-footer__socials {
+    margin-bottom: 20px;
   }
 }
